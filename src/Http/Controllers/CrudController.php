@@ -13,7 +13,7 @@ class CrudController extends Controller
     use DispatchesJobs, ValidatesRequests;
 
     /**
-     * @var CrudPanel
+     * @var \MaxShuai\CrudApi\Http\Models\CrudPanel
      */
     public $crud;
     public $data = [];
