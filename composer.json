@@ -19,11 +19,5 @@
             "MaxShuai\\CrudApi\\Tests\\": "tests/"
         },
         "files": ["src/helpers.php"]
-    },
-    "minimum-stability": "stable",
-    "extra":{
-        "branch-alias":{
-            "dev-master":"1.0.x-dev"
-        }
     }
 }
