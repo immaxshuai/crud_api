@@ -95,6 +95,11 @@ class CrudPanel
         return $this->model;
     }
 
+    public function setResource($resource_namespace)
+    {
+        return $this->set('resource', $resource_namespace);
+    }
+
     /**
      * Get the database connection, as specified in the .env file or overwritten by the property on the model.
      *
