@@ -1,0 +1,29 @@
+{
+    "name": "maxshuai/crud-api",
+    "description": "crud manage api",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "xushuai",
+            "email": "229436890@qq.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "MaxShuai\\CrudApi\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "MaxShuai\\CrudApi\\Tests\\": "tests/"
+        },
+        "files": ["src/helpers.php"]
+    },
+    "minimum-stability": "stable",
+    "extra":{
+        "branch-alias":{
+            "dev-master":"1.0.x-dev"
+        }
+    }
+}
