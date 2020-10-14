@@ -71,15 +71,9 @@ class CrudPanel
      * All Create-Read-Update-Delete operations are done using that Eloquent Collection.
      *
      * @param  string  $model_namespace  Full model namespace. Ex: App\Models\Article
-     *
-     * @throws \Exception in case the model does not exist
      */
     public function setModel($model_namespace)
     {
-        if (!class_exists($model_namespace)) {
-            throw new \Exception('The model does not exist.', 500);
-        }
-
         $this->model = new $model_namespace();
         $this->query = $this->model->select('*');
         $this->entry = null;
@@ -97,7 +91,7 @@ class CrudPanel
 
     public function setResource($resource_namespace)
     {
-        return $this->set('resource', $resource_namespace);
+        return $this->operationSetting('resource', $resource_namespace);
     }
 
     /**
